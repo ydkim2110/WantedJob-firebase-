@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <!-- 툴바 -->
+    <RelativeLayout
+        android:id="@+id/relLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar_more_email" />
+
+    </RelativeLayout>
+
+    <!-- 받는사람 -->
+    <RelativeLayout
+        android:id="@+id/relLayout2"
+        android:layout_below="@+id/relLayout1"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/email_receiver_text"
+            android:text="받는사람:"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/email_receiver_edit_text"
+            android:layout_toRightOf="@+id/email_receiver_text"
+            android:text="ydkim2110@gmail.com"
+            android:background="@null"
+            android:maxLines="2"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <!-- 제목 -->
+    <RelativeLayout
+        android:id="@+id/relLayout3"
+        android:layout_below="@+id/relLayout2"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/email_title_edit_text"
+            android:hint="제목"
+            android:maxLines="2"
+            android:textSize="16sp"
+            android:background="@null"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <!-- 이메일 내용 -->
+    <RelativeLayout
+        android:id="@+id/relLayout4"
+        android:layout_below="@+id/relLayout3"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/email_content_edit_text"
+            android:hint="이메일 내용"
+            android:minLines="20"
+            android:gravity="top"
+            android:textSize="16sp"
+            android:background="@null"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

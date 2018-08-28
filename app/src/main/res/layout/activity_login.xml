@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--  이메일 -->
+    <RelativeLayout
+        android:id="@+id/relLayout1"
+        android:layout_marginTop="200dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/login_email_edit_text"
+                android:hint="이메일"
+                android:text="anti2110@naver.com"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+    <!--  패스워드 -->
+    <RelativeLayout
+        android:id="@+id/relLayout2"
+        android:layout_below="@+id/relLayout1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/login_password_edit_text"
+                android:hint="패스워드"
+                android:text="starc4512@"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+    <!--  로그인 버튼 -->
+    <RelativeLayout
+        android:id="@+id/relLayout3"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/relLayout2"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/login_btn"
+            android:text="로그인"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_margin="8dp"
+            android:background="@drawable/white_rounded_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <!--  회원가입 버튼 -->
+    <RelativeLayout
+        android:id="@+id/relLayout4"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/relLayout3"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/login_register_btn"
+            android:text="회원가입"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_margin="8dp"
+            android:background="@drawable/white_rounded_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/login_progressbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relLayout4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/login_progressbar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_progressbar"
+        android:text="로그인중입니다..."
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

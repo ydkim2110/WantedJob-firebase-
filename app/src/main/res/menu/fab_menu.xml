@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_timeline"
+        android:title="타임라인"
+        android:icon="@drawable/ic_send" />
+
+    <item
+        android:id="@+id/action_job"
+        android:title="취업게시판"
+        android:icon="@drawable/ic_send" />
+
+    <item
+        android:id="@+id/action_study"
+        android:title="스터디모집"
+        android:icon="@drawable/ic_send" />
+
+</menu>

@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "582580849592",
+    "firebase_url": "https://financeinfoshare.firebaseio.com",
+    "project_id": "financeinfoshare",
+    "storage_bucket": "financeinfoshare.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582580849592:android:4b0ebfb5ece40ed2",
+        "android_client_info": {
+          "package_name": "com.example.anti2110.financeinfoshare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582580849592-i4ilo7g67h4av3ad15p190597t2idgnb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.anti2110.financeinfoshare",
+            "certificate_hash": "2b8d1e43095b52001089a1c200030e551ae092d6"
+          }
+        },
+        {
+          "client_id": "582580849592-8dfaragbjddio7hvo51u3rbvauvo8ga3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArPf6RjNJaFchabmrCHI-6uxB3uTnDuNI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582580849592-8dfaragbjddio7hvo51u3rbvauvo8ga3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582580849592:android:01dcd0c16c267ec5",
+        "android_client_info": {
+          "package_name": "com.example.anti2110.wantedjob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582580849592-onf6ma9v9d21fbgukts18aginn6skb8r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.anti2110.wantedjob",
+            "certificate_hash": "2b8d1e43095b52001089a1c200030e551ae092d6"
+          }
+        },
+        {
+          "client_id": "582580849592-8dfaragbjddio7hvo51u3rbvauvo8ga3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArPf6RjNJaFchabmrCHI-6uxB3uTnDuNI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582580849592-8dfaragbjddio7hvo51u3rbvauvo8ga3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

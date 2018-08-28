@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".notice.NoticeDetailActivity">
+
+    <!-- Toolbar -->
+    <RelativeLayout
+        android:id="@+id/relLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar_notice_detail"
+            android:id="@+id/toolbar_notice_detail"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@+id/relLayout1"
+        android:layout_above="@+id/linLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <!-- Content -->
+            <RelativeLayout
+                android:id="@+id/relLayout2"
+                android:background="@color/white"
+                android:layout_marginTop="8dp"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/relLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/relLayout2_linLayout1"
+                        android:orientation="vertical"
+                        android:background="@drawable/border_bottom_grey"
+                        android:paddingBottom="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/notice_detail_category"
+                            android:background="@drawable/text_view_style_color_grey"
+                            android:text="@string/app_name"
+                            android:textAlignment="center"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/notice_detail_title"
+                            android:text="Title"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="80dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/notice_detail_sub_title"
+                            android:text="Sub Title"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="80dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/notice_detail_id"
+                            android:layout_below="@+id/notice_detail_title"
+                            android:text="id"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="80dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/notice_detail_date"
+                            android:layout_below="@+id/notice_detail_title"
+                            android:text="date"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="80dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/notice_image"
+                        android:src="@drawable/laptop"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_width="80dp"
+                        android:layout_height="120dp">
+                    </ImageView>
+
+                </RelativeLayout>
+
+                <org.sufficientlysecure.htmltextview.HtmlTextView
+                    android:id="@+id/notice_detail_content"
+                    android:layout_below="@+id/relLayout3"
+                    android:layout_marginTop="16dp"
+                    android:text="Content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+            <!-- Social -->
+            <LinearLayout
+                android:id="@+id/linLayout1"
+                android:layout_below="@id/relLayout2"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- 좋아요 -->
+                <LinearLayout
+                    android:id="@+id/linLayout1_likes"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/notice_detail_likes_image"
+                        android:src="@drawable/ic_likes"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:id="@+id/notice_detail_likes"
+                        android:text="likes"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <!-- 댓글 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/notice_detail_reply_image"
+                        android:src="@drawable/ic_reply"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:id="@+id/notice_detail_reply"
+                        android:text="reply"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <!-- 공유하기 -->
+                <LinearLayout
+                    android:id="@+id/linLayout1_share"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/notice_detail_share_image"
+                        android:src="@drawable/ic_share"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:id="@+id/notice_detail_share_reply"
+                        android:text="공유하기"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- 광고 -->
+            <RelativeLayout
+                android:id="@+id/relLayout4"
+                android:layout_below="@+id/linLayout1"
+                android:background="@color/white"
+                android:layout_marginTop="8dp"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <TextView
+                    android:text="광고"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <!-- 댓글 목록 -->
+            <RelativeLayout
+                android:id="@+id/relLayout4_reply"
+                android:layout_below="@+id/relLayout4"
+                android:background="@color/white"
+                android:layout_marginTop="8dp"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_reply"
+                    android:text="댓글"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_below="@+id/tv_reply"
+                    android:id="@+id/notice_reply_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+    <!-- 댓글 작성 -->
+    <LinearLayout
+        android:id="@+id/linLayout3"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/border_top_grey"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/notice_reply_et"
+            android:hint="댓글을 남겨주세요."
+            android:paddingLeft="16dp"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="8.5"/>
+
+        <ImageView
+            android:id="@+id/notice_reply_send_image"
+            android:src="@drawable/ic_send"
+            android:padding="8dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

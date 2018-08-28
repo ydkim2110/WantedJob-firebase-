@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_marginTop="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 내용 -->
+            <LinearLayout
+                android:id="@+id/linLayout1"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/border_bottom_grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/home_notice_category"
+                    android:background="@drawable/orange_rounded_text"
+                    android:text="@string/app_name"
+                    android:textColor="@color/colorOrange"
+                    android:textAlignment="center"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/home_notice_text_title"
+                    android:text="Title"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/home_notice_text_sub_title"
+                    android:text="Sub Title"
+                    android:textSize="14sp"
+                    android:maxLines="2"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="구분: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/home_notice_target"
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="학력: "
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/home_notice_edu_background"
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="접수마감일: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/notice_end_date_text"
+                        android:text=""
+                        android:textColor="@android:color/holo_red_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- 사진 -->
+            <ImageView
+                android:id="@+id/notice_list_image"
+                android:src="@drawable/laptop"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="80dp"
+                android:layout_height="120dp">
+            </ImageView>
+
+        </RelativeLayout>
+        <!-- 바닥 -->
+        <LinearLayout
+            android:id="@+id/linLayout2"
+            android:layout_below="@+id/relLayout1"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linLayout2_view_count"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/notice_view_count_image"
+                    android:src="@drawable/ic_view"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/notice_view_count"
+                    android:text="조회수"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/notice_reply_image"
+                    android:src="@drawable/ic_reply"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/notice_reply_count"
+                    android:text="댓글"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayout2_likes"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/notice_likes_image"
+                    android:src="@drawable/ic_likes"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/notice_likes"
+                    android:text="좋아요"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/notice_date"
+                android:text="Date"
+                android:gravity="end"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

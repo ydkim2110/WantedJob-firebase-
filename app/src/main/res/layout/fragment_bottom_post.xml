@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notice.finance.FinanceNoticeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/post_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/border_bottom_grey"
+            app:tabGravity="fill"
+            app:tabMode="scrollable"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:tabSelectedTextColor="@color/black"
+            app:tabTextColor="@color/grey_dark">
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/post_view_pager"
+            android:layout_below="@+id/post_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+        <io.github.yavski.fabspeeddial.FabSpeedDial
+            android:id="@+id/fab_speed_dial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            app:fabGravity="bottom_end"
+            app:fabMenu="@menu/fab_menu"
+            app:miniFabBackgroundTint="@color/white"
+            app:miniFabDrawableTint="@color/colorPrimaryDark"
+            app:miniFabTitleTextColor="@color/colorPrimaryDark">
+
+        </io.github.yavski.fabspeeddial.FabSpeedDial>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

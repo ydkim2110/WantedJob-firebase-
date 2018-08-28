@@ -1,0 +1,48 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom_grey">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/notice_detail_toolbar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/notice_detail_toolbar_back_arrow"
+                    android:src="@drawable/ic_chevron_left"
+                    android:layout_centerVertical="true"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:id="@+id/profile_toolbar_title"
+                    android:text="채용공고 상세보기"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/notice_detail_toolbar_back_arrow"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:id="@+id/notice_detail_toolbar_bookmark"
+                    android:src="@drawable/ic_bookmark_black"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+</merge>

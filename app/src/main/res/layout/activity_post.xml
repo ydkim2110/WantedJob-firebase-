@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".post.PostActivity">
+
+    <!-- Toolbar -->
+    <RelativeLayout
+        android:id="@+id/relLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+     <include layout="@layout/toolbar_post" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/relLayout1"
+        android:orientation="vertical"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_post_category"
+                android:background="@null"
+                android:gravity="top|left"
+                android:textColorHint="@color/black"
+                android:padding="16dp"
+                android:enabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_post_title"
+                android:hint="제목을 입력하세요."
+                android:background="@null"
+                android:gravity="top|left"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_post_content"
+                android:hint="내용을 입력하세요."
+                android:minLines="20"
+                android:gravity="top|left"
+                android:background="@null"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

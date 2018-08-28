@@ -1,0 +1,128 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey">
+
+        <!-- 프로필 -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/profile_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/profile_card_title"
+                    android:text="프로필"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:background="@drawable/border_bottom_grey"/>
+
+                <TextView
+                    android:id="@+id/profile_card_nickname"
+                    android:layout_below="@+id/profile_card_title"
+                    android:layout_marginTop="16dp"
+                    android:text="Nick Name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/profile_card_email"
+                    android:layout_below="@+id/profile_card_nickname"
+                    android:layout_marginTop="8dp"
+                    android:text="ydkim2110@gmail.com"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@drawable/ic_chevron_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- 이메일 문의 -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/email_card_view"
+            android:layout_below="@+id/profile_card_view"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="email 문의하기"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_chevron_right"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- 로그아웃 -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/logout_card_view"
+            android:layout_below="@+id/email_card_view"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="로그아웃"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_chevron_right"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</merge>
